@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: whitesmoke;
+            padding: 20px;
+            border: 10px groove lightblue;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            border: 5px groove lightblue;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List:</h1>
+        <ul id="task-list"></ul>
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
